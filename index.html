@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript" src="js/jquery.js" />
+	<script type="text/javascript" src="js/swfobject.js" />
+	<script type="text/javascript" src="js/json/json2.js" />
+	<script type="text/javascript" src="js/git-hotness.js" />
+	
+	<script type="text/javascript">
+		swfobject.embedSWF("open-flash-chart.swf", "git-chart", "600", "500", "9.0.0");
+	</script>
+	
+	<style type="text/css" media="screen">
+		body{font-family:"Lucida Grande", Helvetica, Arial, sans-serif;margin-top:3em;text-align:center;}
+		.big{font-size:3em;}
+		.small{font-size:1em;}
+		.highlight{background-color:#ffff00;padding:5px;}
+		#git-user{border:1px solid #000;}
+		#git-chart,#try-again,#stupid-me{display:none;}
+		a{color:#0000ff;}
+	</style>
+	
+	<title>git-hotness</title>
+	
+</head>
+
+<body>
+
+<div id="git-hotness"><span class="big highlight">git-hotness</span> <input class="big" type="text" id="git-user" /></div>
+<div id="try-again"><span class="small"><a href="index.html">check other git-hotness</a></span></div>
+<div id="stupid-me"><span class="small"><a href="index.html">if this goes no where, it means i'm too stupid to write codes to deal with user not found.. go back and try again, ok?</a></span></div>
+<div id="git-chart"></div>
+
+</body>
+</html>
